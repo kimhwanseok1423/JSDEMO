@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //변수(variable): 변하는 데이터(값)을 지정할수있는 메모리 공간이다.
+      //var,let,const
+      //console.log(3);
+      //console.log(3):
+      let data = 3; // 변수 선언
+      console.log(`data:%d`, data); //결과 호출
+
+      //출력기호: %d(숫자),   %s(문자열)
+      let a = "javascript";
+      console.log(`a=%s`, a);
+      //  %b( 볼린형 )은 자바스크립트에선 불가능해서 `b=${b}` 이런식으로 해야함
+      let b = true;
+      console.log(`b=${b}`, b);
+
+      let c = 4.58;
+      console.log(`c=%f`, c);
+      //https://developer.mozilla.org/ko/docs/Web/API/console
+      //chrome에서는 숫자서식이 안됨
+      // console.log(`c=%.1f`,c);    `c=%f` 이런식으로 하기
+
+      let d = null;
+      console.log(`d=${d}`);
+
+      //uncaught ReferenceError: e is nor defind
+    </script>
+  </body>
+</html>

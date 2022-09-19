@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //변수 선언전 ->  Uncaught ReferenceError: foo is not defined
+      //변수 선언후 ->foo:undefined
+      console.log(`foo:${foo}`);
+
+      // 변수 선언전-> Uncaught ReferenceError: foo is not defined
+      // 변수 선언후-> Uncaught ReferenceError: Cannot access 'bar' before initialization
+      console.log(`bar:${bar}`);
+
+      let bar; //바로앞에다가 써야 오류안뜸
+      var foo; // 앞에 쓰나 뒤에쓰나 상관없음
+    </script>
+  </body>
+</html>
