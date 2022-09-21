@@ -122,3 +122,55 @@ for (let x = 0; x <= 10; x++) {
     }
   }
 }
+
+/*
+문제 정답   (다른 버전)
+
+1.
+ let num =10;
+   let bit =num%10 == 0 ? 1 : 0;
+   console.log(bit);
+
+2.
+  let numOfApple=123; // 사과의 수 
+       let sizeOfBucket=10; // 하나의 바구니에 담는 사과수
+       let numOfBucket; //필요한 바구니 수
+       
+       numOfBucket=
+       numOfApple % sizeOfBucket ==0 
+       ? parseInt(numOfApple /sizeOfBucket
+       : parseInt(numOfApple /sizeOfBucket) +1;
+       console.log(`필요한 바구니의 수 " ${numOfBucket}`);
+3.
+let carNumber= 5;
+let day;
+
+switch(carNumber){
+case 1 :
+cas 6 :
+day='월요일'
+break;
+case 2:
+case 7:
+day='화요일'
+break;
+
+case 3:
+case 8:
+day='수요일'
+break;
+...
+이런식으로 하고 마지막에 
+${carNumber} ${day} 값 구하면됨.
+
+
+4
+for (let year = 2001; year <= 2012; year++) {
+  let leapYearCheck = (year % 4 == 0 && year % 100 != 0) || year % 400 == 0;
+if (leapYearCheck) {
+    console.log(`${year}년도는 윤년입니다.`);
+  }
+}
+-------------------------------------------------------------------
+
+*/
