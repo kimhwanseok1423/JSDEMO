@@ -3,10 +3,20 @@
   num변수의 값이 10의 배수이면 1을 아니면 0을 
    리턴하는 프로그램을 구현하시오.
   [실행결과]
-   10
+   0 또는 1 
  */
+/*
 
-let num = 440;
+   let num =10;
+   let bit =num%10 == 0 ? 1 : 0;
+   console.log(bit);
+
+
+
+
+*/
+
+let num = 11;
 
 if (num % 10 === 0) {
   console.log(`num=1`);
@@ -84,12 +94,13 @@ switch (num1 % 5) {
      2008
      2012
     */
-/*
-for (let year = 2001; y <= 2012; y++) {
-  if (year / 4 == 0 && year % 400 == 0) {
-    console.log(`${year}`);
-  } else {
-    y++;
+
+//let year = 2012;
+for (let year = 2001; year <= 2012; year++) {
+  let leapYearCheck = (year % 4 == 0 && year % 100 != 0) || year % 400 == 0;
+  //let yearData = leapYearCheck ? '윤년' : '평년';
+  if (leapYearCheck) {
+    console.log(`${year}년도는 윤년입니다.`);
   }
 }
 /*

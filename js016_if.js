@@ -2,7 +2,8 @@
 제어문: 프로그램의 흐름을 제어할수 있는 실행문이다.
 1. 조건문 if~else
 2.선택문 switch~case
-3.반복문 for ,while 
+3.반복문 for ,while  do-while , for~in, for ~of
+4.lable(임의 정의), continue, break
 
 조건문: 조건식 값 참일때 거짓일때 
 if(조건식){
