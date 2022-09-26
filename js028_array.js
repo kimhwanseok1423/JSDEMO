@@ -96,4 +96,4 @@ const per = ages.filter(function (element, index) {
   return element >= 18;
 });
 
-console.log(`per :${per}`);
+console.log(`per :${per}`); // map, reduce, filter 암기해야함
