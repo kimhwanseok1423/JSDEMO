@@ -9,7 +9,6 @@ ptNode.style.color = "blue";
 let prevNode = myNode.previousSibling;
 console.log(`prevNode:${prevNode}`);
 
-//여기 문제있음
 let nextNode = myNode.nextSibling;
 console.log(`nextNode:${nextNode}`);
 ////////////////////////////////

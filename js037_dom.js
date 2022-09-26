@@ -2,7 +2,7 @@ let pNode = document.getElementById("wrap");
 //1p null
 console.log(`${pNode.nodeType} ${pNode.nodeName}${pNode.nodeValue}`);
 //속성명
-let pAttr = pNode.attributes;
+let pAttr = pNode.attributes; //모든속성값 읽을때
 //amedNodeMap {0: id, 1: class, id: id, class: class, length: 2}
 console.log(pAttr);
 
