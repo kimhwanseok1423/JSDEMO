@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+<style>
+    #popup{
+        width: 301px;
+        height: 351px;
+        border: 1px solid black;
+        position: fixed;
+        left:30%;
+        top:100px;
+    }
+</style>  
+
+</head>
+  
+  <body>
+    <div>
+      <p>
+        호출을 시작한 뒤 배열에 추가한 요소는 callback이 방문하지 않습니다.
+        배열의 기존 요소값이 바뀐 경우, callback에 전달하는 값은 forEach()가
+        요소를 방문한 시점의 값을 사용합니다. 방문하기 전에 삭제한 요소는
+        방문하지 않습니다.  호출을 시작한 뒤 배열에 추가한 요소는 callback이 방문하지 않습니다.
+        배열의 기존 요소값이 바뀐 경우, callback에 전달하는 값은 forEach()가
+        요소를 방문한 시점의 값을 사용합니다. 방문하기 전에 삭제한 요소는
+        방문하지 않습니다.  호출을 시작한 뒤 배열에 추가한 요소는 callback이 방문하지 않습니다.
+        배열의 기존 요소값이 바뀐 경우, callback에 전달하는 값은 forEach()가
+        요소를 방문한 시점의 값을 사용합니다. 방문하기 전에 삭제한 요소는
+        방문하지 않습니다.  호출을 시작한 뒤 배열에 추가한 요소는 callback이 방문하지 않습니다.
+        배열의 기존 요소값이 바뀐 경우, callback에 전달하는 값은 forEach()가
+        요소를 방문한 시점의 값을 사용합니다. 방문하기 전에 삭제한 요소는
+        방문하지 않습니다.
+      </p>
+      <div id='popup'>
+        <img src='images/images/popup.jpg' usemap='#pop' />
+      </div>
+      <map name="pop" id="pop">
+        <area
+          shape="rect"
+          coords="255,332,290,345"
+          href="#"
+          alt="창닫기"/>
+    </div>
+    <script>
+        let close=document.querySelector('map#pop area');
+        close.onclick=()=>{
+            let popup=document.querySelector('div#popup');
+            popup.style.width='0px';
+            popup.style.height='0px';
+            popup.style.visibility='hidden' 
+        }
+    </script>
+  </body>
+</html>

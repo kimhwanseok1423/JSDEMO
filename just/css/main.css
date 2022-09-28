@@ -1,0 +1,81 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #333;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+li {
+  float: left;
+}
+.ibx {
+  /* 가운대 정렬 */
+  width: 1200px;
+  margin: 0px auto;
+}
+
+.pbx {
+  float: left;
+  height: 100px;
+  padding: 10px;
+  box-sizing: border-box; /*패딩때문에 커지는 것을 막아줌 */
+}
+
+/* ============================A header ================== */
+.top {
+  position: relative;
+  height: 100px;
+  z-index: 999px; /*가장 위로 배치*/
+}
+.top1 {
+  width: 200px;
+}
+.top2 {
+  width: 1000px;
+}
+.logo {
+  margin-left: -10px;
+}
+.gnb {
+  width: 800px;
+  height: 50px;
+  background-color: rgb(117, 188, 255);
+  margin-top: 40px;
+  margin-left: 190px;
+}
+/*header {
+  border: 1px solid red;
+}*/
+.gnb li {
+  position: relative;
+  width: 200px;
+  /*border: 1px solid black;*/
+}
+
+.gnb a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 50px;
+  text-align: center;
+}
+/* 서브 메뉴 */
+
+.gnb ol {
+  height: 0;
+  overflow: hidden;
+}
